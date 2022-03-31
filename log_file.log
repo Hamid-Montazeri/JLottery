@@ -1,0 +1,270 @@
+۲۰۲۲-۰۳-۳۱ ۱۶:۱۰:۲۰.۰۳۷  INFO 13708 --- [main] i.m.j.jlottery.JLotteryApplication       : Starting JLotteryApplication using Java 17.0.1 on DESKTOP-SBIIQ02 with PID 13708 (C:\Users\Hamid\IdeaProjects\JLottery\target\classes started by Hamid in C:\Users\Hamid\IdeaProjects\JLottery)
+۲۰۲۲-۰۳-۳۱ ۱۶:۱۰:۲۰.۰۴۷  INFO 13708 --- [main] i.m.j.jlottery.JLotteryApplication       : No active profile set, falling back to 1 default profile: "default"
+۲۰۲۲-۰۳-۳۱ ۱۶:۱۰:۲۱.۷۰۱  INFO 13708 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+۲۰۲۲-۰۳-۳۱ ۱۶:۱۰:۲۱.۸۱۵  INFO 13708 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97 ms. Found 5 JPA repository interfaces.
+۲۰۲۲-۰۳-۳۱ ۱۶:۱۰:۲۲.۷۱۰  INFO 13708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+۲۰۲۲-۰۳-۳۱ ۱۶:۱۰:۲۲.۷۲۰  INFO 13708 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+۲۰۲۲-۰۳-۳۱ ۱۶:۱۰:۲۲.۷۲۰  INFO 13708 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+۲۰۲۲-۰۳-۳۱ ۱۶:۱۰:۲۲.۸۵۰  INFO 13708 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+۲۰۲۲-۰۳-۳۱ ۱۶:۱۰:۲۲.۸۵۱  INFO 13708 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2683 ms
+۲۰۲۲-۰۳-۳۱ ۱۶:۱۰:۲۳.۱۴۱  INFO 13708 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+۲۰۲۲-۰۳-۳۱ ۱۶:۱۰:۲۳.۱۸۵  INFO 13708 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+۲۰۲۲-۰۳-۳۱ ۱۶:۱۰:۲۳.۳۱۰  INFO 13708 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+۲۰۲۲-۰۳-۳۱ ۱۶:۱۰:۲۳.۴۰۴  INFO 13708 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+۲۰۲۲-۰۳-۳۱ ۱۶:۱۰:۲۳.۴۱۰  WARN 13708 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+۲۰۲۲-۰۳-۳۱ ۱۶:۱۰:۲۳.۵۳۲  INFO 13708 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+۲۰۲۲-۰۳-۳۱ ۱۶:۱۰:۲۳.۵۶۵  INFO 13708 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+۲۰۲۲-۰۳-۳۱ ۱۶:۱۰:۲۴.۳۶۵  INFO 13708 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+۲۰۲۲-۰۳-۳۱ ۱۶:۱۰:۲۴.۳۷۴  INFO 13708 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+۲۰۲۲-۰۳-۳۱ ۱۶:۱۰:۲۴.۹۷۶  WARN 13708 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+۲۰۲۲-۰۳-۳۱ ۱۶:۱۰:۲۵.۳۱۵  INFO 13708 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+۲۰۲۲-۰۳-۳۱ ۱۶:۱۰:۲۶.۸۰۸  INFO 13708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+۲۰۲۲-۰۳-۳۱ ۱۶:۱۰:۲۶.۸۲۳  INFO 13708 --- [main] i.m.j.jlottery.JLotteryApplication       : Started JLotteryApplication in 7.988 seconds (JVM running for 10.294)
+۲۰۲۲-۰۳-۳۱ ۱۶:۱۰:۵۷.۷۷۳  INFO 13708 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+۲۰۲۲-۰۳-۳۱ ۱۶:۱۰:۵۷.۷۷۴  INFO 13708 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+۲۰۲۲-۰۳-۳۱ ۱۶:۱۰:۵۷.۷۷۵  INFO 13708 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+۲۰۲۲-۰۳-۳۱ ۱۶:۱۰:۵۸.۹۴۷  INFO 13708 --- [http-nio-8080-exec-6] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 661 ms
+۲۰۲۲-۰۳-۳۱ ۱۶:۱۲:۳۸.۸۶۵  INFO 13708 --- [http-nio-8080-exec-8] i.m.jlottery.jlottery.aspect.LogAspect   : The method: LotteryDTO ir.mapsa.jlottery.jlottery.service.LotteryServiceImpl.execute(EPrizeType,Integer,Integer) is going to call from class: LotteryServiceImpl
+۲۰۲۲-۰۳-۳۱ ۱۶:۱۲:۳۹.۰۱۲  INFO 13708 --- [http-nio-8080-exec-8] i.m.jlottery.jlottery.aspect.LogAspect   : The method: LotteryDTO ir.mapsa.jlottery.jlottery.service.LotteryServiceImpl.execute(EPrizeType,Integer,Integer) has called from class LotteryServiceImpl$$EnhancerBySpringCGLIB$$5605dafc with return value type: LotteryDTO
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۵:۲۷.۷۸۷  INFO 13708 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۵:۲۷.۷۸۹  INFO 13708 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۵:۲۷.۷۹۷  INFO 13708 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۵:۳۸.۲۹۹  INFO 14148 --- [main] i.m.j.jlottery.JLotteryApplication       : Starting JLotteryApplication using Java 17.0.1 on DESKTOP-SBIIQ02 with PID 14148 (C:\Users\Hamid\IdeaProjects\JLottery\target\classes started by Hamid in C:\Users\Hamid\IdeaProjects\JLottery)
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۵:۳۸.۳۰۴  INFO 14148 --- [main] i.m.j.jlottery.JLotteryApplication       : No active profile set, falling back to 1 default profile: "default"
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۵:۴۰.۱۶۹  INFO 14148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۵:۴۰.۳۴۰  INFO 14148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 154 ms. Found 5 JPA repository interfaces.
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۵:۴۱.۸۶۱  INFO 14148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۵:۴۱.۸۸۶  INFO 14148 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۵:۴۱.۸۸۸  INFO 14148 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۵:۴۲.۱۵۴  INFO 14148 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۵:۴۲.۱۵۶  INFO 14148 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3744 ms
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۵:۴۲.۷۳۳  INFO 14148 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۵:۴۲.۸۶۷  INFO 14148 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۵:۴۳.۱۴۸  INFO 14148 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۵:۴۳.۳۳۶  INFO 14148 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۵:۴۳.۳۴۲  WARN 14148 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۵:۴۳.۵۲۵  INFO 14148 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۵:۴۳.۵۳۹  INFO 14148 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۵:۴۴.۸۵۵  INFO 14148 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۵:۴۴.۸۶۴  INFO 14148 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۵:۴۵.۵۷۷  WARN 14148 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۵:۴۵.۹۷۲  INFO 14148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۵:۴۸.۰۲۸  INFO 14148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۵:۴۸.۰۴۲  INFO 14148 --- [main] i.m.j.jlottery.JLotteryApplication       : Started JLotteryApplication in 10.902 seconds (JVM running for 13.309)
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۶:۱۷.۲۲۹  INFO 14148 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۶:۱۷.۲۳۱  INFO 14148 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۶:۱۷.۲۳۹  INFO 14148 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۶:۲۴.۰۶۲  INFO 9552 --- [main] i.m.j.jlottery.JLotteryApplication       : Starting JLotteryApplication using Java 17.0.1 on DESKTOP-SBIIQ02 with PID 9552 (C:\Users\Hamid\IdeaProjects\JLottery\target\classes started by Hamid in C:\Users\Hamid\IdeaProjects\JLottery)
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۶:۲۴.۰۶۸  INFO 9552 --- [main] i.m.j.jlottery.JLotteryApplication       : No active profile set, falling back to 1 default profile: "default"
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۶:۲۵.۲۱۱  INFO 9552 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۶:۲۵.۳۰۹  INFO 9552 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89 ms. Found 5 JPA repository interfaces.
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۶:۲۶.۲۱۰  INFO 9552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۶:۲۶.۲۲۲  INFO 9552 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۶:۲۶.۲۲۳  INFO 9552 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۶:۲۶.۳۸۵  INFO 9552 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۶:۲۶.۳۸۶  INFO 9552 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2232 ms
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۶:۲۶.۷۰۳  INFO 9552 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۶:۲۶.۷۵۰  INFO 9552 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۶:۲۶.۹۰۱  INFO 9552 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۶:۲۷.۰۰۰  INFO 9552 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۶:۲۷.۰۰۵  WARN 9552 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۶:۲۷.۱۷۴  INFO 9552 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۶:۲۷.۱۸۸  INFO 9552 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۶:۲۹.۳۷۸  INFO 9552 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۶:۲۹.۳۸۹  INFO 9552 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۶:۲۹.۹۹۳  WARN 9552 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۶:۳۰.۳۴۳  INFO 9552 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۶:۳۱.۷۹۷  INFO 9552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۶:۳۱.۸۱۱  INFO 9552 --- [main] i.m.j.jlottery.JLotteryApplication       : Started JLotteryApplication in 8.538 seconds (JVM running for 10.207)
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۶:۴۷.۸۸۳  INFO 9552 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۶:۴۷.۸۸۳  INFO 9552 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۶:۴۷.۸۸۵  INFO 9552 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۶:۴۹.۰۰۹  INFO 9552 --- [http-nio-8080-exec-6] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 616 ms
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۷:۰۵.۵۱۶  INFO 9552 --- [http-nio-8080-exec-7] i.m.jlottery.jlottery.aspect.LogAspect   : The method: LotteryDTO ir.mapsa.jlottery.jlottery.service.LotteryServiceImpl.execute(EPrizeType,Integer,Integer) is going to call from class: LotteryServiceImpl
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۷:۰۵.۶۳۳  INFO 9552 --- [http-nio-8080-exec-7] i.m.jlottery.jlottery.aspect.LogAspect   : The method: LotteryDTO ir.mapsa.jlottery.jlottery.service.LotteryServiceImpl.execute(EPrizeType,Integer,Integer) has called from class LotteryServiceImpl$$EnhancerBySpringCGLIB$$476686e5 with return value type: LotteryDTO
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۹:۳۷.۸۸۳  INFO 9552 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۹:۳۷.۸۸۵  INFO 9552 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۹:۳۷.۸۹۲  INFO 9552 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۹:۵۰.۳۶۶  INFO 3112 --- [main] i.m.j.jlottery.JLotteryApplication       : Starting JLotteryApplication using Java 17.0.1 on DESKTOP-SBIIQ02 with PID 3112 (C:\Users\Hamid\IdeaProjects\JLottery\target\classes started by Hamid in C:\Users\Hamid\IdeaProjects\JLottery)
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۹:۵۰.۳۷۱  INFO 3112 --- [main] i.m.j.jlottery.JLotteryApplication       : No active profile set, falling back to 1 default profile: "default"
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۹:۵۲.۷۵۱  INFO 3112 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۹:۵۲.۹۱۲  INFO 3112 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 144 ms. Found 5 JPA repository interfaces.
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۹:۵۴.۲۱۹  INFO 3112 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۹:۵۴.۲۲۸  INFO 3112 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۹:۵۴.۲۲۹  INFO 3112 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۹:۵۴.۳۹۲  INFO 3112 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۹:۵۴.۳۹۳  INFO 3112 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3918 ms
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۹:۵۴.۷۱۳  INFO 3112 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۹:۵۴.۷۶۱  INFO 3112 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۹:۵۴.۹۰۳  INFO 3112 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۹:۵۴.۹۹۵  INFO 3112 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۹:۵۵.۰۰۱  WARN 3112 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۹:۵۵.۱۴۲  INFO 3112 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۹:۵۵.۱۶۴  INFO 3112 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۹:۵۶.۲۷۳  INFO 3112 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۹:۵۶.۲۸۱  INFO 3112 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۹:۵۶.۹۵۵  WARN 3112 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۹:۵۷.۳۲۹  INFO 3112 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۹:۵۹.۰۵۵  INFO 3112 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+۲۰۲۲-۰۳-۳۱ ۱۶:۲۹:۵۹.۰۶۹  INFO 3112 --- [main] i.m.j.jlottery.JLotteryApplication       : Started JLotteryApplication in 10.043 seconds (JVM running for 12.806)
+۲۰۲۲-۰۳-۳۱ ۱۷:۳۶:۳۵.۶۳۲  WARN 3112 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=36m9s819ms425µs200ns).
+۲۰۲۲-۰۳-۳۱ ۱۹:۰۱:۳۶.۸۰۴  WARN 3112 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50m30s609ms157µs700ns).
+۲۰۲۲-۰۳-۳۱ ۱۹:۰۴:۲۶.۴۳۹  INFO 3112 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+۲۰۲۲-۰۳-۳۱ ۱۹:۰۴:۲۶.۴۴۲  INFO 3112 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+۲۰۲۲-۰۳-۳۱ ۱۹:۰۴:۲۶.۴۴۶  INFO 3112 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۲:۱۰.۳۰۱  INFO 11740 --- [main] i.m.j.jlottery.JLotteryApplication       : Starting JLotteryApplication using Java 17.0.1 on DESKTOP-SBIIQ02 with PID 11740 (C:\Users\Hamid\IdeaProjects\JLottery\target\classes started by Hamid in C:\Users\Hamid\IdeaProjects\JLottery)
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۲:۱۰.۳۰۶  INFO 11740 --- [main] i.m.j.jlottery.JLotteryApplication       : No active profile set, falling back to 1 default profile: "default"
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۲:۱۱.۶۱۳  INFO 11740 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۲:۱۱.۷۲۷  INFO 11740 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 102 ms. Found 5 JPA repository interfaces.
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۲:۱۲.۵۸۲  INFO 11740 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۲:۱۲.۵۹۱  INFO 11740 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۲:۱۲.۵۹۲  INFO 11740 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۲:۱۲.۷۳۹  INFO 11740 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۲:۱۲.۷۴۰  INFO 11740 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2352 ms
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۲:۱۲.۹۷۰  INFO 11740 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۲:۱۳.۰۳۸  INFO 11740 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۲:۱۳.۲۲۷  INFO 11740 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۲:۱۳.۳۴۱  INFO 11740 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۲:۱۳.۳۴۶  WARN 11740 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۲:۱۳.۴۸۲  INFO 11740 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۲:۱۳.۴۹۷  INFO 11740 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۲:۱۴.۴۷۸  INFO 11740 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۲:۱۴.۴۸۷  INFO 11740 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۲:۱۵.۰۱۰  WARN 11740 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۲:۱۵.۳۲۵  INFO 11740 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۲:۱۶.۸۳۱  INFO 11740 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۲:۱۶.۸۵۳  INFO 11740 --- [main] i.m.j.jlottery.JLotteryApplication       : Started JLotteryApplication in 7.413 seconds (JVM running for 8.864)
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۲:۲۰.۰۲۰  INFO 11740 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۲:۲۰.۰۲۱  INFO 11740 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۲:۲۰.۰۲۳  INFO 11740 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۲:۲۱.۲۴۲  INFO 11740 --- [http-nio-8080-exec-8] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 572 ms
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۲:۵۵.۹۲۴ ERROR 11740 --- [http-nio-8080-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.time.DateTimeException: Unable to obtain Instant from TemporalAccessor: 2022-03-31T20:22:55.909345700 of type java.time.LocalDateTime] with root cause
+
+java.time.temporal.UnsupportedTemporalTypeException: Unsupported field: InstantSeconds
+	at java.base/java.time.LocalDate.get0(LocalDate.java:709) ~[na:na]
+	at java.base/java.time.LocalDate.getLong(LocalDate.java:688) ~[na:na]
+	at java.base/java.time.LocalDateTime.getLong(LocalDateTime.java:718) ~[na:na]
+	at java.base/java.time.Instant.from(Instant.java:375) ~[na:na]
+	at ir.mapsa.jlottery.jlottery.service.LotteryServiceImpl.execute(LotteryServiceImpl.java:71) ~[classes/:na]
+	at ir.mapsa.jlottery.jlottery.controller.LotteryController.executeLottery(LotteryController.java:29) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.58.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.58.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at ir.mapsa.jlottery.jlottery.util.jwt.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:50) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilterInternal(AuthorizationFilter.java:58) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۳:۲۴.۲۶۹  INFO 11740 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۳:۲۴.۲۷۲  INFO 11740 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۳:۲۴.۲۸۲  INFO 11740 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۳:۳۳.۳۸۰  INFO 16728 --- [main] i.m.j.jlottery.JLotteryApplication       : Starting JLotteryApplication using Java 17.0.1 on DESKTOP-SBIIQ02 with PID 16728 (C:\Users\Hamid\IdeaProjects\JLottery\target\classes started by Hamid in C:\Users\Hamid\IdeaProjects\JLottery)
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۳:۳۳.۳۸۴  INFO 16728 --- [main] i.m.j.jlottery.JLotteryApplication       : No active profile set, falling back to 1 default profile: "default"
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۳:۳۴.۴۵۱  INFO 16728 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۳:۳۴.۵۵۱  INFO 16728 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 5 JPA repository interfaces.
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۳:۳۵.۲۸۶  INFO 16728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۳:۳۵.۲۹۵  INFO 16728 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۳:۳۵.۲۹۶  INFO 16728 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۳:۳۵.۴۳۳  INFO 16728 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۳:۳۵.۴۳۴  INFO 16728 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1969 ms
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۳:۳۵.۶۴۱  INFO 16728 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۳:۳۵.۶۸۵  INFO 16728 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۳:۳۵.۸۱۳  INFO 16728 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۳:۳۵.۹۰۳  INFO 16728 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۳:۳۵.۹۰۹  WARN 16728 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۳:۳۶.۰۳۶  INFO 16728 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۳:۳۶.۰۵۰  INFO 16728 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۳:۳۶.۸۴۷  INFO 16728 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۳:۳۶.۸۵۹  INFO 16728 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۳:۳۷.۳۹۶  WARN 16728 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۳:۳۷.۶۸۳  INFO 16728 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۳:۳۹.۰۱۴  INFO 16728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۳:۳۹.۰۲۶  INFO 16728 --- [main] i.m.j.jlottery.JLotteryApplication       : Started JLotteryApplication in 6.452 seconds (JVM running for 8.192)
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۳:۴۵.۳۰۰  INFO 16728 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۳:۴۵.۳۰۰  INFO 16728 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۳:۴۵.۳۰۲  INFO 16728 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۳:۵۸.۲۱۳  INFO 16728 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۳:۵۸.۲۱۵  INFO 16728 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+۲۰۲۲-۰۳-۳۱ ۲۰:۲۳:۵۸.۲۲۲  INFO 16728 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

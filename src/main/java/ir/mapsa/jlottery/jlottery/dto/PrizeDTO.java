@@ -5,8 +5,6 @@ import ir.mapsa.jlottery.jlottery.enums.EPrizeType;
 public class PrizeDTO {
 
     private EPrizeType name;
-    private Integer stock;
-
 
     public EPrizeType getName() {
         return name;
@@ -16,11 +14,4 @@ public class PrizeDTO {
         this.name = name;
     }
 
-    public Integer getStock() {
-        return stock;
-    }
-
-    public void setStock(Integer stock) {
-        this.stock = stock;
-    }
 }

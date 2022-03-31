@@ -12,9 +12,15 @@ import ir.mapsa.jlottery.jlottery.model.Prize;
 import ir.mapsa.jlottery.jlottery.model.Winner;
 import ir.mapsa.jlottery.jlottery.respository.LotteryRepository;
 import ir.mapsa.jlottery.jlottery.respository.PersonRepository;
+import org.hibernate.type.LocalDateTimeType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.Instant;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZoneOffset;
+import java.util.Date;
 import java.util.List;
 import java.util.Random;
 import java.util.Set;
@@ -62,6 +68,7 @@ public class LotteryServiceImpl extends BaseServiceImpl<Lottery, LotteryDTO> imp
 
         Lottery lottery = new Lottery();
         lottery.setWinner(winner);
+        lottery.setDate(new Date());
 
         lotteryRepository.save(lottery);
 
