@@ -1,7 +1,6 @@
 package ir.mapsa.jlottery.jlottery.controller;
 
 import ir.mapsa.jlottery.jlottery.dto.LotteryDTO;
-import ir.mapsa.jlottery.jlottery.enums.EPrizeLevel;
 import ir.mapsa.jlottery.jlottery.enums.EPrizeType;
 import ir.mapsa.jlottery.jlottery.model.Lottery;
 import ir.mapsa.jlottery.jlottery.service.ILotteryService;

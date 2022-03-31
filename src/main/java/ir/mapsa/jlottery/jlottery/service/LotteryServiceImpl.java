@@ -12,14 +12,9 @@ import ir.mapsa.jlottery.jlottery.model.Prize;
 import ir.mapsa.jlottery.jlottery.model.Winner;
 import ir.mapsa.jlottery.jlottery.respository.LotteryRepository;
 import ir.mapsa.jlottery.jlottery.respository.PersonRepository;
-import org.hibernate.type.LocalDateTimeType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.time.Instant;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.time.ZoneOffset;
 import java.util.Date;
 import java.util.List;
 import java.util.Random;

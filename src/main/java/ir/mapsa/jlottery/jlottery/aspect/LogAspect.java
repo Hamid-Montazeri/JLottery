@@ -2,9 +2,7 @@ package ir.mapsa.jlottery.jlottery.aspect;
 
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.AfterThrowing;
-import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
@@ -14,19 +12,17 @@ import org.springframework.stereotype.Component;
 @Slf4j
 public class LogAspect {
 
+    //    @Pointcut("execution(* ir.mapsa.jlottery.jlottery.service.*.*(..))")
     @Pointcut("within(ir.mapsa.jlottery.jlottery.service..*)")
     public void allServices() {
     }
 
+    //    @Pointcut("execution(* ir.mapsa.jlottery.jlottery.controller.*.*(..))")
     @Pointcut("within(ir.mapsa.jlottery.jlottery.controller..*)")
     public void allControllers() {
     }
 
-    @Pointcut("within(ir.mapsa.jlottery.jlottery.util.jwt..*)")
-    public void jwt() {
-    }
-
-    @AfterThrowing(pointcut = "allServices() || jwt() || allControllers()", throwing = "error")
+    @AfterThrowing(pointcut = "allServices() || allControllers()", throwing = "error")
     public void afterThrowingAdvice(JoinPoint jp, Throwable error) {
         log.error("Method Signature: " + jp.getSignature());
         log.error("Exception: " + error);
