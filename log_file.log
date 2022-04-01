@@ -49,3 +49,115 @@
 ۲۰۲۲-۰۴-۰۱ ۱۵:۳۸:۳۶.۸۳۹  INFO 1952 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 ۲۰۲۲-۰۴-۰۱ ۱۵:۳۸:۳۶.۸۴۳  INFO 1952 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
 ۲۰۲۲-۰۴-۰۱ ۱۵:۳۸:۴۴.۶۰۳  INFO 1952 --- [http-nio-8080-exec-1] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1840 ms
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۲۶.۹۷۹  INFO 5096 --- [main] i.m.j.jlottery.JLotteryApplication       : Starting JLotteryApplication using Java 17.0.1 on DESKTOP-SBIIQ02 with PID 5096 (C:\Users\Hamid\IdeaProjects\JLottery\target\classes started by Hamid in C:\Users\Hamid\IdeaProjects\JLottery)
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۲۶.۹۸۳  INFO 5096 --- [main] i.m.j.jlottery.JLotteryApplication       : No active profile set, falling back to 1 default profile: "default"
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۲۷.۹۲۳  INFO 5096 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۲۸.۰۲۵  INFO 5096 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89 ms. Found 5 JPA repository interfaces.
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۲۸.۶۷۵  INFO 5096 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۲۸.۶۸۲  INFO 5096 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۲۸.۶۸۳  INFO 5096 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۲۸.۸۰۴  INFO 5096 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۲۸.۸۰۴  INFO 5096 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1764 ms
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۲۸.۹۹۹  INFO 5096 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۲۹.۰۴۰  INFO 5096 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۲۹.۱۵۴  INFO 5096 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۲۹.۲۴۰  INFO 5096 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۲۹.۲۴۵  WARN 5096 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۲۹.۵۷۵  INFO 5096 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۲۹.۵۸۹  INFO 5096 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۳۳.۷۲۵  INFO 5096 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۳۳.۷۳۴  INFO 5096 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۳۴.۲۰۹  WARN 5096 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۳۴.۶۱۱  INFO 5096 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۳۵.۸۵۴  WARN 5096 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۳۵.۸۵۹  INFO 5096 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۳۵.۸۶۱  INFO 5096 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۳۵.۸۶۹  INFO 5096 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۳۵.۸۷۲  INFO 5096 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۳۵.۸۸۶  INFO 5096 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۳۵.۹۲۰ ERROR 5096 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۴۹.۱۵۱  INFO 11344 --- [main] i.m.j.jlottery.JLotteryApplication       : Starting JLotteryApplication using Java 17.0.1 on DESKTOP-SBIIQ02 with PID 11344 (C:\Users\Hamid\IdeaProjects\JLottery\target\classes started by Hamid in C:\Users\Hamid\IdeaProjects\JLottery)
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۴۹.۱۵۶  INFO 11344 --- [main] i.m.j.jlottery.JLotteryApplication       : No active profile set, falling back to 1 default profile: "default"
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۵۰.۱۲۶  INFO 11344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۵۰.۲۲۳  INFO 11344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 84 ms. Found 5 JPA repository interfaces.
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۵۰.۸۸۷  INFO 11344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۵۰.۸۹۴  INFO 11344 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۵۰.۸۹۵  INFO 11344 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۵۱.۰۱۷  INFO 11344 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۵۱.۰۱۸  INFO 11344 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1777 ms
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۵۱.۲۰۸  INFO 11344 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۵۱.۲۴۹  INFO 11344 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۵۱.۳۶۷  INFO 11344 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۵۱.۴۵۰  INFO 11344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۵۱.۴۵۵  WARN 11344 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۵۱.۷۸۷  INFO 11344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۵۱.۷۹۹  INFO 11344 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۵۲.۶۳۴  INFO 11344 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۵۲.۶۴۲  INFO 11344 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۵۳.۰۹۹  WARN 11344 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۵۳.۴۳۵  INFO 11344 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۵۴.۵۷۱  WARN 11344 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۵۴.۵۷۵  INFO 11344 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۵۴.۵۷۷  INFO 11344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۵۴.۵۸۷  INFO 11344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۵۴.۵۹۰  INFO 11344 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۵۴.۶۰۳  INFO 11344 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۴:۵۴.۶۱۸ ERROR 11344 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۵:۲۰.۳۹۸  INFO 5592 --- [main] i.m.j.jlottery.JLotteryApplication       : Starting JLotteryApplication using Java 17.0.1 on DESKTOP-SBIIQ02 with PID 5592 (C:\Users\Hamid\IdeaProjects\JLottery\target\classes started by Hamid in C:\Users\Hamid\IdeaProjects\JLottery)
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۵:۲۰.۴۰۱  INFO 5592 --- [main] i.m.j.jlottery.JLotteryApplication       : No active profile set, falling back to 1 default profile: "default"
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۵:۲۱.۳۰۰  INFO 5592 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۵:۲۱.۳۹۴  INFO 5592 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 84 ms. Found 5 JPA repository interfaces.
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۵:۲۲.۰۶۰  INFO 5592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۵:۲۲.۰۶۹  INFO 5592 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۵:۲۲.۰۶۹  INFO 5592 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۵:۲۲.۱۹۱  INFO 5592 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۵:۲۲.۱۹۲  INFO 5592 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1734 ms
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۵:۲۲.۳۸۳  INFO 5592 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۵:۲۲.۴۲۹  INFO 5592 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۵:۲۲.۵۵۴  INFO 5592 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۵:۲۲.۶۴۸  INFO 5592 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۵:۲۲.۶۵۴  WARN 5592 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۵:۲۳.۰۶۷  INFO 5592 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۵:۲۳.۰۸۱  INFO 5592 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۵:۲۳.۹۷۶  INFO 5592 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۵:۲۳.۹۸۵  INFO 5592 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۵:۲۴.۵۲۵  WARN 5592 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۵:۲۵.۹۱۴  INFO 5592 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۵:۲۷.۷۲۸  INFO 5592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۵:۲۷.۷۴۳  INFO 5592 --- [main] i.m.j.jlottery.JLotteryApplication       : Started JLotteryApplication in 8.147 seconds (JVM running for 9.749)
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۵:۵۱.۱۶۹  INFO 1952 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۵:۵۱.۱۷۱  INFO 1952 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۵:۵۱.۱۸۱  INFO 1952 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۵:۵۱.۲۱۶  INFO 5592 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۵:۵۱.۲۱۸  INFO 5592 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+۲۰۲۲-۰۴-۰۱ ۱۵:۵۵:۵۱.۲۲۵  INFO 5592 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -22,12 +22,6 @@ public class PersonController {
         return personService.generateToken(person, response);
     }
 
-    @PostMapping("/add-prize")
-//    @Secured(value = "ADMIN")
-    public ResponseEntity<?> addPrize() {
-        return null;
-    }
-
     @PostMapping("")
     public ResponseEntity<Person> saveOrUpdate(@RequestBody PersonDTO personDTO) {
         return ResponseEntity.ok(personService.saveOrUpdate(personDTO));

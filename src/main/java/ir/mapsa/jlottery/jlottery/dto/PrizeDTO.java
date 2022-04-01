@@ -7,5 +7,6 @@ import lombok.Data;
 public class PrizeDTO {
 
     private EPrizeType name;
+    private Integer stock;
 
 }

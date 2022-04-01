@@ -17,6 +17,7 @@ public class PrizeController {
     private final IPrizeService prizeService;
 
     @PostMapping
+//    @Secured(value = "ADMIN")
     public ResponseEntity<Prize> saveOrUpdate(@RequestBody PrizeDTO prizeDTO) {
         return ResponseEntity.ok().body(prizeService.saveOrUpdate(prizeDTO));
     }
