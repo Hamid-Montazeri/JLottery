@@ -11,8 +11,8 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
-import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Random;
 import java.util.Set;
 
@@ -30,7 +30,7 @@ public class UserSeeder implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) {
         if (personRepository.count() == 0) {
-            for (int i = 0; i < 100; i++) {
+            for (int i = 0; i < 10; i++) {
                 Faker faker = new Faker();
 
                 Person person = new Person();
@@ -44,7 +44,7 @@ public class UserSeeder implements ApplicationRunner {
                 Set<Role> roles = new HashSet<>();
                 Role role = new Role();
                 role.setName(ERole.USER);
-                role.setAuthorities(Arrays.asList(Authority.OP_ACCESS_USER));
+                role.setAuthorities(List.of(Authority.OP_ACCESS_USER));
                 roles.add(role);
                 person.setRoles(roles);
 

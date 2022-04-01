@@ -18,7 +18,7 @@ public class WinnerServiceImpl extends BaseServiceImpl<Winner, WinnerDTO> implem
     private final WinnerMapper mapper;
 
     @Override
-    protected BaseRepository<Winner> getLotteryRepository() {
+    protected BaseRepository<Winner> getRepository() {
         return repository;
     }
 

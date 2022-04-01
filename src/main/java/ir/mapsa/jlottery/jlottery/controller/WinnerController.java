@@ -1,9 +1,8 @@
 package ir.mapsa.jlottery.jlottery.controller;
 
-import ir.mapsa.jlottery.jlottery.dto.WinnerDTO;
 import ir.mapsa.jlottery.jlottery.model.Winner;
 import ir.mapsa.jlottery.jlottery.service.IWinnerService;
-import lombok.RequiredArgsConstructor;
+import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,15 +10,16 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/winners")
-@RequiredArgsConstructor
+@AllArgsConstructor
 public class WinnerController {
 
     private final IWinnerService winnerService;
-
+/*
     @PostMapping
     public ResponseEntity<Winner> saveOrUpdate(@RequestBody WinnerDTO winnerDTO) {
         return ResponseEntity.ok().body(winnerService.saveOrUpdate(winnerDTO));
     }
+*/
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteById(@PathVariable long id) {
@@ -35,12 +35,14 @@ public class WinnerController {
 
     @GetMapping("/{id}")
     public ResponseEntity<Winner> findById(@PathVariable long id) {
-        return ResponseEntity.ok().body(winnerService.findById(id));
+        Winner responseBody = winnerService.findById(id);
+        return ResponseEntity.ok(responseBody);
     }
 
     @GetMapping("")
     public ResponseEntity<List<Winner>> findAll() {
-        return ResponseEntity.ok().body(winnerService.findAll());
+        List<Winner> responseBody = winnerService.findAll();
+        return ResponseEntity.ok(responseBody);
     }
 
 }

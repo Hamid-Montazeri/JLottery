@@ -26,9 +26,8 @@ public class PersonServiceImpl extends BaseServiceImpl<Person, PersonDTO> implem
     private final JwtUtil jwtUtil;
     private final AuthenticationManager authenticationManager;
 
-
     @Override
-    protected BaseRepository<Person> getLotteryRepository() {
+    protected BaseRepository<Person> getRepository() {
         return personRepository;
     }
 

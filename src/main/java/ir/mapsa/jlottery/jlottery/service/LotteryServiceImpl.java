@@ -12,6 +12,7 @@ import ir.mapsa.jlottery.jlottery.model.Prize;
 import ir.mapsa.jlottery.jlottery.model.Winner;
 import ir.mapsa.jlottery.jlottery.respository.LotteryRepository;
 import ir.mapsa.jlottery.jlottery.respository.PersonRepository;
+import ir.mapsa.jlottery.jlottery.respository.PrizeRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -26,11 +27,16 @@ import java.util.Set;
 public class LotteryServiceImpl extends BaseServiceImpl<Lottery, LotteryDTO> implements ILotteryService {
 
     private final LotteryRepository lotteryRepository;
+    private final PrizeRepository prizeRepository;
     private final PersonRepository personRepository;
     private final LotteryMapper lotteryMapper;
 
+    private final Prize prize;
+    private final Winner winner;
+    private final Lottery lottery;
+
     @Override
-    protected BaseRepository<Lottery> getLotteryRepository() {
+    protected BaseRepository<Lottery> getRepository() {
         return lotteryRepository;
     }
 
@@ -40,29 +46,29 @@ public class LotteryServiceImpl extends BaseServiceImpl<Lottery, LotteryDTO> imp
     }
 
     @Override
-    public LotteryDTO execute(EPrizeType prizeType, Integer prizeCount, Integer minRequiredScore) {
+    public LotteryDTO execute(EPrizeType prizeType, Integer minRequiredScore) {
         Set<Person> eligiblePersons = personRepository.findAllByScoreBetween(minRequiredScore, Integer.MAX_VALUE);
         int randomBall = new Random().nextInt(0, eligiblePersons.size() + 1);
 
+        System.out.println("random ball = " + randomBall);
+
         Person winnerPerson = (Person) eligiblePersons.toArray()[randomBall];
 
-        System.out.println(winnerPerson.toString());
-
-        Prize prize = new Prize();
-        prize.setStock(prizeCount - 1);
+        prize.setStock(prize.getStock() - 1);
         prize.setName(prizeType);
 
         winnerPerson.setPrizes(List.of(prize));
-        Winner winner = new Winner();
+
         winner.setPerson(winnerPerson);
 
-        Lottery lottery = new Lottery();
         lottery.setWinner(winner);
 
         lottery.setDate(
                 Timestamp.from(Instant.now())
         );
 
+        personRepository.save(winnerPerson);
+        prizeRepository.save(prize);
         lotteryRepository.save(lottery);
 
         return lotteryMapper.toDTO(lottery);

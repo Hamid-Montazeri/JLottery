@@ -7,6 +7,6 @@ import ir.mapsa.jlottery.jlottery.model.Lottery;
 
 public interface ILotteryService extends BaseService<Lottery, LotteryDTO> {
 
-    LotteryDTO execute(EPrizeType prizeType, Integer prizeCount, Integer minRequiredScore);
+    LotteryDTO execute(EPrizeType prizeType, Integer minRequiredScore);
 
 }

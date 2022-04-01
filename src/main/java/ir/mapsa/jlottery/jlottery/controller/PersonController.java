@@ -3,7 +3,7 @@ package ir.mapsa.jlottery.jlottery.controller;
 import ir.mapsa.jlottery.jlottery.dto.PersonDTO;
 import ir.mapsa.jlottery.jlottery.model.Person;
 import ir.mapsa.jlottery.jlottery.service.IPersonService;
-import lombok.RequiredArgsConstructor;
+import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/persons")
-@RequiredArgsConstructor
+@AllArgsConstructor
 public class PersonController {
 
     private final IPersonService personService;
@@ -24,7 +24,8 @@ public class PersonController {
 
     @PostMapping("")
     public ResponseEntity<Person> saveOrUpdate(@RequestBody PersonDTO personDTO) {
-        return ResponseEntity.ok(personService.saveOrUpdate(personDTO));
+        Person responseBody = personService.saveOrUpdate(personDTO);
+        return ResponseEntity.ok(responseBody);
     }
 
     @DeleteMapping("/{id}")
@@ -41,12 +42,14 @@ public class PersonController {
 
     @GetMapping("/{id}")
     public ResponseEntity<Person> findById(@PathVariable long id) {
-        return ResponseEntity.ok().body(personService.findById(id));
+        Person responseBody = personService.findById(id);
+        return ResponseEntity.ok(responseBody);
     }
 
     @GetMapping("")
     public ResponseEntity<List<Person>> findAll() {
-        return ResponseEntity.ok().body(personService.findAll());
+        List<Person> responseBody = personService.findAll();
+        return ResponseEntity.ok(responseBody);
     }
 
 

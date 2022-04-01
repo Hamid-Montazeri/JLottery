@@ -18,7 +18,7 @@ public class RoleServiceImpl extends BaseServiceImpl<Role, RoleDTO> implements I
     private final RoleMapper mapper;
 
     @Override
-    protected BaseRepository<Role> getLotteryRepository() {
+    protected BaseRepository<Role> getRepository() {
         return repository;
     }
 
