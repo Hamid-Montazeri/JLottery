@@ -15,7 +15,7 @@ spring:
       ddl-auto: update
     show-sql: true
 
-logging:
-  file:
-    name: log_file.log
-    path: ./
+#logging:
+#  file:
+#    name: log_file.log
+#    path: ./

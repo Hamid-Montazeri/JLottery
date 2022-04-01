@@ -242,3 +242,32 @@ java.sql.SQLSyntaxErrorException: Table 'jlottery.prize' doesn't exist
 ۲۰۲۲-۰۴-۰۲ ۰۳:۰۷:۰۶.۱۹۸  INFO 9848 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 ۲۰۲۲-۰۴-۰۲ ۰۳:۰۷:۰۶.۱۹۹  INFO 9848 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 ۲۰۲۲-۰۴-۰۲ ۰۳:۰۷:۰۶.۲۰۰  INFO 9848 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+۲۰۲۲-۰۴-۰۲ ۰۳:۲۹:۲۵.۳۳۶  INFO 8704 --- [main] i.m.j.jlottery.JLotteryApplication       : Starting JLotteryApplication using Java 17.0.1 on DESKTOP-SBIIQ02 with PID 8704 (C:\Users\Hamid\IdeaProjects\JLottery\target\classes started by Hamid in C:\Users\Hamid\IdeaProjects\JLottery)
+۲۰۲۲-۰۴-۰۲ ۰۳:۲۹:۲۵.۳۴۱  INFO 8704 --- [main] i.m.j.jlottery.JLotteryApplication       : No active profile set, falling back to 1 default profile: "default"
+۲۰۲۲-۰۴-۰۲ ۰۳:۲۹:۲۶.۹۳۸  INFO 8704 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+۲۰۲۲-۰۴-۰۲ ۰۳:۲۹:۲۷.۰۵۰  INFO 8704 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 5 JPA repository interfaces.
+۲۰۲۲-۰۴-۰۲ ۰۳:۲۹:۲۷.۹۰۵  INFO 8704 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+۲۰۲۲-۰۴-۰۲ ۰۳:۲۹:۲۷.۹۱۴  INFO 8704 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+۲۰۲۲-۰۴-۰۲ ۰۳:۲۹:۲۷.۹۱۷  INFO 8704 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+۲۰۲۲-۰۴-۰۲ ۰۳:۲۹:۲۸.۰۶۵  INFO 8704 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+۲۰۲۲-۰۴-۰۲ ۰۳:۲۹:۲۸.۰۶۵  INFO 8704 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2648 ms
+۲۰۲۲-۰۴-۰۲ ۰۳:۲۹:۲۸.۳۲۰  INFO 8704 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+۲۰۲۲-۰۴-۰۲ ۰۳:۲۹:۲۸.۴۰۶  INFO 8704 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+۲۰۲۲-۰۴-۰۲ ۰۳:۲۹:۲۸.۵۹۵  INFO 8704 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+۲۰۲۲-۰۴-۰۲ ۰۳:۲۹:۲۸.۷۲۲  INFO 8704 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+۲۰۲۲-۰۴-۰۲ ۰۳:۲۹:۲۸.۷۲۸  WARN 8704 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+۲۰۲۲-۰۴-۰۲ ۰۳:۲۹:۲۹.۱۹۳  INFO 8704 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+۲۰۲۲-۰۴-۰۲ ۰۳:۲۹:۲۹.۲۱۵  INFO 8704 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+۲۰۲۲-۰۴-۰۲ ۰۳:۲۹:۳۰.۲۶۸  INFO 8704 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+۲۰۲۲-۰۴-۰۲ ۰۳:۲۹:۳۰.۲۸۱  INFO 8704 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+۲۰۲۲-۰۴-۰۲ ۰۳:۲۹:۳۰.۸۶۱  WARN 8704 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+۲۰۲۲-۰۴-۰۲ ۰۳:۲۹:۳۱.۲۵۷  INFO 8704 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+۲۰۲۲-۰۴-۰۲ ۰۳:۲۹:۳۲.۷۷۲  INFO 8704 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+۲۰۲۲-۰۴-۰۲ ۰۳:۲۹:۳۲.۷۸۹  INFO 8704 --- [main] i.m.j.jlottery.JLotteryApplication       : Started JLotteryApplication in 8.332 seconds (JVM running for 12.988)
+۲۰۲۲-۰۴-۰۲ ۰۳:۲۹:۴۶.۳۹۳  INFO 8704 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+۲۰۲۲-۰۴-۰۲ ۰۳:۲۹:۴۶.۳۹۳  INFO 8704 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+۲۰۲۲-۰۴-۰۲ ۰۳:۲۹:۴۶.۳۹۵  INFO 8704 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+۲۰۲۲-۰۴-۰۲ ۰۳:۲۹:۴۷.۷۸۶  INFO 8704 --- [http-nio-8080-exec-8] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 606 ms
+۲۰۲۲-۰۴-۰۲ ۰۳:۳۱:۴۴.۶۰۷  INFO 8704 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+۲۰۲۲-۰۴-۰۲ ۰۳:۳۱:۴۴.۶۱۱  INFO 8704 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+۲۰۲۲-۰۴-۰۲ ۰۳:۳۱:۴۴.۶۳۰  INFO 8704 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
