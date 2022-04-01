@@ -3,7 +3,7 @@ package ir.mapsa.jlottery.jlottery.controller;
 import ir.mapsa.jlottery.jlottery.dto.WinnerDTO;
 import ir.mapsa.jlottery.jlottery.model.Winner;
 import ir.mapsa.jlottery.jlottery.service.IWinnerService;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,14 +11,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/winners")
+@RequiredArgsConstructor
 public class WinnerController {
 
     private final IWinnerService winnerService;
-
-    @Autowired
-    public WinnerController(IWinnerService winnerService) {
-        this.winnerService = winnerService;
-    }
 
     @PostMapping
     public ResponseEntity<Winner> saveOrUpdate(@RequestBody WinnerDTO winnerDTO) {

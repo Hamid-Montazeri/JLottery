@@ -8,7 +8,7 @@ import ir.mapsa.jlottery.jlottery.mapper.PersonMapper;
 import ir.mapsa.jlottery.jlottery.model.Person;
 import ir.mapsa.jlottery.jlottery.respository.PersonRepository;
 import ir.mapsa.jlottery.jlottery.util.jwt.JwtUtil;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -17,6 +17,7 @@ import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletResponse;
 
+@RequiredArgsConstructor
 @Service
 public class PersonServiceImpl extends BaseServiceImpl<Person, PersonDTO> implements IPersonService {
 
@@ -25,13 +26,6 @@ public class PersonServiceImpl extends BaseServiceImpl<Person, PersonDTO> implem
     private final JwtUtil jwtUtil;
     private final AuthenticationManager authenticationManager;
 
-    @Autowired
-    public PersonServiceImpl(PersonRepository personRepository, PersonMapper personMapper, JwtUtil jwtUtil, AuthenticationManager authenticationManager) {
-        this.personRepository = personRepository;
-        this.personMapper = personMapper;
-        this.jwtUtil = jwtUtil;
-        this.authenticationManager = authenticationManager;
-    }
 
     @Override
     protected BaseRepository<Person> getLotteryRepository() {
@@ -56,6 +50,7 @@ public class PersonServiceImpl extends BaseServiceImpl<Person, PersonDTO> implem
             return ResponseEntity.badRequest().build();
         }
         String token = jwtUtil.generateToken(person);
+
         return ResponseEntity.ok(token);
     }
 

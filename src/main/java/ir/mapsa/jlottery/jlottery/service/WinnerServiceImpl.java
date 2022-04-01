@@ -7,20 +7,15 @@ import ir.mapsa.jlottery.jlottery.dto.WinnerDTO;
 import ir.mapsa.jlottery.jlottery.mapper.WinnerMapper;
 import ir.mapsa.jlottery.jlottery.model.Winner;
 import ir.mapsa.jlottery.jlottery.respository.WinnerRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+@RequiredArgsConstructor
 @Service
 public class WinnerServiceImpl extends BaseServiceImpl<Winner, WinnerDTO> implements IWinnerService {
 
     private final WinnerRepository repository;
     private final WinnerMapper mapper;
-
-    @Autowired
-    public WinnerServiceImpl(WinnerRepository repository, WinnerMapper mapper) {
-        this.repository = repository;
-        this.mapper = mapper;
-    }
 
     @Override
     protected BaseRepository<Winner> getLotteryRepository() {

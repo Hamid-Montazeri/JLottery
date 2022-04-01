@@ -7,20 +7,15 @@ import ir.mapsa.jlottery.jlottery.dto.PrizeDTO;
 import ir.mapsa.jlottery.jlottery.mapper.PrizeMapper;
 import ir.mapsa.jlottery.jlottery.model.Prize;
 import ir.mapsa.jlottery.jlottery.respository.PrizeRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+@RequiredArgsConstructor
 @Service
 public class PrizeServiceImpl extends BaseServiceImpl<Prize, PrizeDTO> implements IPrizeService {
 
     private final PrizeRepository repository;
     private final PrizeMapper mapper;
-
-    @Autowired
-    public PrizeServiceImpl(PrizeRepository repository, PrizeMapper mapper) {
-        this.repository = repository;
-        this.mapper = mapper;
-    }
 
     @Override
     protected BaseRepository<Prize> getLotteryRepository() {

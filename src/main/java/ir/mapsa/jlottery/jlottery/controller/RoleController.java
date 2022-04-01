@@ -3,7 +3,7 @@ package ir.mapsa.jlottery.jlottery.controller;
 import ir.mapsa.jlottery.jlottery.dto.RoleDTO;
 import ir.mapsa.jlottery.jlottery.model.Role;
 import ir.mapsa.jlottery.jlottery.service.IRoleService;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,14 +11,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/roles")
+@RequiredArgsConstructor
 public class RoleController {
 
     private final IRoleService roleService;
-
-    @Autowired
-    public RoleController(IRoleService roleService) {
-        this.roleService = roleService;
-    }
 
     @PostMapping
     public ResponseEntity<Role> saveOrUpdate(@RequestBody RoleDTO roleDTO) {

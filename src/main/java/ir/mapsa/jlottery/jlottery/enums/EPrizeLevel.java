@@ -1,8 +1,5 @@
 package ir.mapsa.jlottery.jlottery.enums;
 
-import lombok.Getter;
-
-@Getter
 public enum EPrizeLevel {
 
     /**
