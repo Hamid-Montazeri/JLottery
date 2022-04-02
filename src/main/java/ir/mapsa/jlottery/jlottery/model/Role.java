@@ -2,12 +2,14 @@ package ir.mapsa.jlottery.jlottery.model;
 
 import ir.mapsa.jlottery.jlottery.enums.Authority;
 import ir.mapsa.jlottery.jlottery.enums.ERole;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.List;
 
-@Data
+@Setter
+@Getter
 @Entity
 public class Role {
 
@@ -19,6 +21,7 @@ public class Role {
     private ERole name;
 
     @ElementCollection(targetClass = Authority.class, fetch = FetchType.EAGER)
+    @Enumerated(EnumType.STRING)
     private List<Authority> authorities;
 
 }

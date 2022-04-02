@@ -1,12 +1,14 @@
 package ir.mapsa.jlottery.jlottery.model;
 
 import ir.mapsa.jlottery.jlottery.enums.EPrizeType;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
 
-@Data
+@Setter
+@Getter
 @Entity
 @Component
 public class Prize {

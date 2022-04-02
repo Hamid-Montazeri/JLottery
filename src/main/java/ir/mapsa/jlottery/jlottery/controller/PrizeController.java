@@ -3,7 +3,7 @@ package ir.mapsa.jlottery.jlottery.controller;
 import ir.mapsa.jlottery.jlottery.dto.PrizeDTO;
 import ir.mapsa.jlottery.jlottery.model.Prize;
 import ir.mapsa.jlottery.jlottery.service.IPrizeService;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/prizes")
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class PrizeController {
 
     private final IPrizeService prizeService;

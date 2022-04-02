@@ -1,12 +1,14 @@
 package ir.mapsa.jlottery.jlottery.model;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
 import java.util.Date;
 
-@Data
+@Setter
+@Getter
 @Entity
 @Component
 public class Lottery {

@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 
 @RequiredArgsConstructor
 @Service
-public class RoleServiceImpl extends BaseServiceImpl<Role, RoleDTO> implements IRoleService{
+public class RoleServiceImpl extends BaseServiceImpl<Role, RoleDTO> implements IRoleService {
 
     private final RoleRepository repository;
     private final RoleMapper mapper;

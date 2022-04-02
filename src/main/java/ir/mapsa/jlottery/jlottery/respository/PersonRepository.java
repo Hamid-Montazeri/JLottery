@@ -11,7 +11,9 @@ import java.util.Set;
 public interface PersonRepository extends BaseRepository<Person> {
 
     Optional<Person> findUserByUsername(String username);
+
     Set<Person> findAllByScoreBetween(Integer minScore, Integer maxScore);
+
     Boolean existsByUsername(String username);
 
 }

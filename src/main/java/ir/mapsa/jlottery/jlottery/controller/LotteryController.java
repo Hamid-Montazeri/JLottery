@@ -4,7 +4,7 @@ import ir.mapsa.jlottery.jlottery.dto.LotteryDTO;
 import ir.mapsa.jlottery.jlottery.enums.EPrizeType;
 import ir.mapsa.jlottery.jlottery.model.Lottery;
 import ir.mapsa.jlottery.jlottery.service.ILotteryService;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,15 +12,14 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/lotteries")
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class LotteryController {
 
     private final ILotteryService lotteryService;
 
     @GetMapping("/execute")
     public ResponseEntity<LotteryDTO> executeLottery(@RequestParam EPrizeType prizeType, @RequestParam Integer minRequiredScore) {
-        LotteryDTO responseBody = lotteryService.execute(prizeType, minRequiredScore);
-        return ResponseEntity.ok(responseBody);
+        return  lotteryService.execute(prizeType, minRequiredScore);
     }
 
     @PostMapping("")

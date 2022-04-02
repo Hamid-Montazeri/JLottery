@@ -5,6 +5,7 @@ import java.util.List;
 public abstract class BaseServiceImpl<E, D> implements BaseService<E, D> {
 
     protected abstract BaseRepository<E> getRepository();
+
     protected abstract BaseMapper<E, D> getMapper();
 
     @Override
@@ -26,17 +27,6 @@ public abstract class BaseServiceImpl<E, D> implements BaseService<E, D> {
     public void deleteAll() {
         getRepository().deleteAll();
     }
-
-//    @Override
-//    public Optional<E> findById(long id){
-//        return getRepository().findById(id);
-//    }
-//
-//    @Override
-//    public Optional<List<E>> findAll() {
-//        List<E> listOfEntities = (List<E>) getRepository().findAll();
-//        return Optional.of(listOfEntities);
-//    }
 
     @Override
     public E findById(long id) {

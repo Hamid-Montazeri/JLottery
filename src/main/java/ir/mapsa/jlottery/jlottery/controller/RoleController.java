@@ -3,7 +3,7 @@ package ir.mapsa.jlottery.jlottery.controller;
 import ir.mapsa.jlottery.jlottery.dto.RoleDTO;
 import ir.mapsa.jlottery.jlottery.model.Role;
 import ir.mapsa.jlottery.jlottery.service.IRoleService;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/roles")
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class RoleController {
 
     private final IRoleService roleService;

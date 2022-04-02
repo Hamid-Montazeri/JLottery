@@ -14,6 +14,8 @@ import ir.mapsa.jlottery.jlottery.respository.LotteryRepository;
 import ir.mapsa.jlottery.jlottery.respository.PersonRepository;
 import ir.mapsa.jlottery.jlottery.respository.PrizeRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.sql.Timestamp;
@@ -46,15 +48,25 @@ public class LotteryServiceImpl extends BaseServiceImpl<Lottery, LotteryDTO> imp
     }
 
     @Override
-    public LotteryDTO execute(EPrizeType prizeType, Integer minRequiredScore) {
-        Set<Person> eligiblePersons = personRepository.findAllByScoreBetween(minRequiredScore, Integer.MAX_VALUE);
-        int randomBall = new Random().nextInt(0, eligiblePersons.size() + 1);
+    public ResponseEntity<LotteryDTO> execute(EPrizeType prizeType, Integer minRequiredScore) {
 
-        System.out.println("random ball = " + randomBall);
+        if (prizeRepository.count() == 0) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
+        }
+
+        Set<Person> eligiblePersons = personRepository.findAllByScoreBetween(minRequiredScore, Integer.MAX_VALUE);
+
+        if (eligiblePersons.size() == 0) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
+        }
+
+        int randomBall = new Random().nextInt(0, eligiblePersons.size() + 1);
 
         Person winnerPerson = (Person) eligiblePersons.toArray()[randomBall];
 
-        prize.setStock(prize.getStock() - 1);
+        if (prize.getStock() >= 1)
+            prize.setStock(prize.getStock() - 1);
+
         prize.setName(prizeType);
 
         winnerPerson.setPrizes(List.of(prize));
@@ -71,6 +83,7 @@ public class LotteryServiceImpl extends BaseServiceImpl<Lottery, LotteryDTO> imp
         prizeRepository.save(prize);
         lotteryRepository.save(lottery);
 
-        return lotteryMapper.toDTO(lottery);
+        LotteryDTO lotteryDTO = lotteryMapper.toDTO(lottery);
+        return ResponseEntity.ok(lotteryDTO);
     }
 }

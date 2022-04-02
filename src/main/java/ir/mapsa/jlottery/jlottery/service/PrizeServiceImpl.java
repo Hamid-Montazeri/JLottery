@@ -7,10 +7,10 @@ import ir.mapsa.jlottery.jlottery.dto.PrizeDTO;
 import ir.mapsa.jlottery.jlottery.mapper.PrizeMapper;
 import ir.mapsa.jlottery.jlottery.model.Prize;
 import ir.mapsa.jlottery.jlottery.respository.PrizeRepository;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-@AllArgsConstructor
+@RequiredArgsConstructor
 @Service
 public class PrizeServiceImpl extends BaseServiceImpl<Prize, PrizeDTO> implements IPrizeService {
 
