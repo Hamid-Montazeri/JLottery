@@ -1,9 +1,12 @@
 package ir.mapsa.jlottery.jlottery.dto;
 
 import ir.mapsa.jlottery.jlottery.enums.EPrizeType;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+
+@Setter
+@Getter
 public class PrizeDTO {
 
     private EPrizeType name;

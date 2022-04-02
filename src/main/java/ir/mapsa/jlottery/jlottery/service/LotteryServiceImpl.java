@@ -48,10 +48,18 @@ public class LotteryServiceImpl extends BaseServiceImpl<Lottery, LotteryDTO> imp
     }
 
     @Override
-    public ResponseEntity<LotteryDTO> execute(EPrizeType prizeType, Integer minRequiredScore) {
+    public ResponseEntity<?> execute(EPrizeType prizeType, Integer minRequiredScore) {
 
         if (prizeRepository.count() == 0) {
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("There is no \"prizes!\", first define some \"prizes\", please.");
+        }
+
+        List<Prize> prizes = (List<Prize>) prizeRepository.findAll();
+
+        for (Prize prize : prizes) {
+            if (prize.getName() != prizeType) {
+                return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Requested \"prize\" does not exist!");
+            }
         }
 
         Set<Person> eligiblePersons = personRepository.findAllByScoreBetween(minRequiredScore, Integer.MAX_VALUE);

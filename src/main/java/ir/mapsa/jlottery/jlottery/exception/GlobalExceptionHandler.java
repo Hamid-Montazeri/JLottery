@@ -12,7 +12,7 @@ import java.util.NoSuchElementException;
 @Slf4j
 public class GlobalExceptionHandler {
 
-    @ExceptionHandler(value = NoSuchElementException.class)
+    @ExceptionHandler(value = {NoSuchElementException.class, NullPointerException.class})
     public ResponseEntity<?> handleNoSuchElementException(NoSuchElementException exception) {
         log.error("No such element exception: " + exception.getMessage());
         return new ResponseEntity<>(exception.getMessage(), HttpStatus.NOT_FOUND);

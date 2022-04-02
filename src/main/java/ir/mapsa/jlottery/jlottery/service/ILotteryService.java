@@ -8,6 +8,6 @@ import org.springframework.http.ResponseEntity;
 
 public interface ILotteryService extends BaseService<Lottery, LotteryDTO> {
 
-    ResponseEntity<LotteryDTO> execute(EPrizeType prizeType, Integer minRequiredScore);
+    ResponseEntity<?> execute(EPrizeType prizeType, Integer minRequiredScore);
 
 }

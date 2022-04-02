@@ -1,8 +1,11 @@
 package ir.mapsa.jlottery.jlottery.dto;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+
+@Setter
+@Getter
 public class WinnerDTO {
 
     private PersonDTO person;

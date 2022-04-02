@@ -5,7 +5,7 @@ import ir.mapsa.jlottery.jlottery.dto.PrizeDTO;
 import ir.mapsa.jlottery.jlottery.model.Prize;
 import org.mapstruct.Mapper;
 
-@Mapper(componentModel = "spring", uses = PersonMapper.class)
+@Mapper(componentModel = "spring")
 public interface PrizeMapper extends BaseMapper<Prize, PrizeDTO> {
 
 }

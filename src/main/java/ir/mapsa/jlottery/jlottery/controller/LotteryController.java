@@ -1,5 +1,6 @@
 package ir.mapsa.jlottery.jlottery.controller;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
 import ir.mapsa.jlottery.jlottery.dto.LotteryDTO;
 import ir.mapsa.jlottery.jlottery.enums.EPrizeType;
 import ir.mapsa.jlottery.jlottery.model.Lottery;
@@ -18,8 +19,8 @@ public class LotteryController {
     private final ILotteryService lotteryService;
 
     @GetMapping("/execute")
-    public ResponseEntity<LotteryDTO> executeLottery(@RequestParam EPrizeType prizeType, @RequestParam Integer minRequiredScore) {
-        return  lotteryService.execute(prizeType, minRequiredScore);
+    public ResponseEntity<?> executeLottery(@RequestParam EPrizeType prizeType, @RequestParam Integer minRequiredScore) {
+        return lotteryService.execute(prizeType, minRequiredScore);
     }
 
     @PostMapping("")

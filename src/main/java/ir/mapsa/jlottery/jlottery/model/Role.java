@@ -20,8 +20,8 @@ public class Role {
     @Enumerated(EnumType.STRING)
     private ERole name;
 
-    @ElementCollection(targetClass = Authority.class, fetch = FetchType.EAGER)
     @Enumerated(EnumType.STRING)
+    @ElementCollection(targetClass = Authority.class, fetch = FetchType.EAGER)
     private List<Authority> authorities;
 
 }
