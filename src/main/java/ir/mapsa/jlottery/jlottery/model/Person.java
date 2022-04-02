@@ -1,8 +1,6 @@
 package ir.mapsa.jlottery.jlottery.model;
 
 import ir.mapsa.jlottery.jlottery.enums.Authority;
-import lombok.Getter;
-import lombok.Setter;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -12,8 +10,6 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Set;
 
-@Setter
-@Getter
 @Entity
 public class Person implements UserDetails {
 
@@ -67,4 +63,59 @@ public class Person implements UserDetails {
     }
 
 
+    public Long getId() {
+        return this.id;
+    }
+
+    public String getFullName() {
+        return this.fullName;
+    }
+
+    public Integer getScore() {
+        return this.score;
+    }
+
+    public String getUsername() {
+        return this.username;
+    }
+
+    public String getPassword() {
+        return this.password;
+    }
+
+    public Set<Role> getRoles() {
+        return this.roles;
+    }
+
+    public List<Prize> getPrizes() {
+        return this.prizes;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    public void setScore(Integer score) {
+        this.score = score;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
+    }
+
+    public void setPrizes(List<Prize> prizes) {
+        this.prizes = prizes;
+    }
 }

@@ -3,7 +3,6 @@ package ir.mapsa.jlottery.jlottery.controller;
 import ir.mapsa.jlottery.jlottery.dto.PersonDTO;
 import ir.mapsa.jlottery.jlottery.model.Person;
 import ir.mapsa.jlottery.jlottery.service.IPersonService;
-import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,10 +11,13 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/persons")
-@RequiredArgsConstructor
 public class PersonController {
 
     private final IPersonService personService;
+
+    public PersonController(IPersonService personService) {
+        this.personService = personService;
+    }
 
     @PostMapping("/authenticate")
     public ResponseEntity<String> authenticate(@RequestBody Person person, HttpServletResponse response) {
