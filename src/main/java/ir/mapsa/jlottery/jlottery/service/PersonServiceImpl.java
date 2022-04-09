@@ -15,6 +15,7 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletResponse;
+import java.util.Optional;
 
 @Service
 public class PersonServiceImpl extends BaseServiceImpl<Person, PersonDTO> implements IPersonService {
@@ -42,14 +43,14 @@ public class PersonServiceImpl extends BaseServiceImpl<Person, PersonDTO> implem
     }
 
     @Override
+    public Optional<Person> findUserByUsernameAndPassword(String username, String password) {
+        return personRepository.findUserByUsernameAndPassword(username, password);
+    }
+
+    @Override
     public ResponseEntity<String> generateToken(Person person, HttpServletResponse response) {
         try {
-            authenticationManager.authenticate(
-                    new UsernamePasswordAuthenticationToken(
-                            person.getUsername(),
-                            person.getPassword()
-                    )
-            );
+            authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(person.getUsername(), person.getPassword()));
         } catch (AuthenticationException e) {
             return ResponseEntity.badRequest().build();
         }
@@ -57,6 +58,5 @@ public class PersonServiceImpl extends BaseServiceImpl<Person, PersonDTO> implem
 
         return ResponseEntity.ok(token);
     }
-
 
 }

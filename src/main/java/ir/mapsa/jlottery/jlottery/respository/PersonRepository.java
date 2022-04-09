@@ -12,6 +12,8 @@ public interface PersonRepository extends BaseRepository<Person> {
 
     Optional<Person> findUserByUsername(String username);
 
+    Optional<Person> findUserByUsernameAndPassword(String username, String password);
+
     Set<Person> findAllByScoreBetween(Integer minScore, Integer maxScore);
 
     Boolean existsByUsername(String username);

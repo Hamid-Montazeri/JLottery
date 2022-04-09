@@ -37,7 +37,7 @@ public class Person implements UserDetails {
             for (Role roles : roles)
                 authorities.addAll(roles.getAuthorities());
         } else {
-            authorities.add(Authority.OP_ACCESS_USER);
+            authorities.add(Authority.ACCESS_USER);
         }
         return authorities;
     }

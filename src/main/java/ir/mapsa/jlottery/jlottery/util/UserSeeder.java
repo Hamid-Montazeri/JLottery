@@ -44,8 +44,9 @@ public class UserSeeder implements ApplicationRunner {
                 Set<Role> roles = new HashSet<>();
                 Role role = new Role();
                 role.setName(ERole.USER);
-                role.setAuthorities(List.of(Authority.OP_ACCESS_USER));
+                role.setAuthorities(List.of(Authority.ACCESS_USER));
                 roles.add(role);
+
                 person.setRoles(roles);
 
                 personRepository.save(person);

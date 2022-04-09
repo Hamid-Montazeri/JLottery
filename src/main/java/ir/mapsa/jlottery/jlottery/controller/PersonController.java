@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/persons")
@@ -19,9 +20,10 @@ public class PersonController {
         this.personService = personService;
     }
 
-    @PostMapping("/authenticate")
-    public ResponseEntity<String> authenticate(@RequestBody Person person, HttpServletResponse response) {
-        return personService.generateToken(person, response);
+    @PostMapping("/generate-token")
+    public ResponseEntity<String> generateToken(@RequestParam String username, @RequestParam String password, HttpServletResponse response) {
+        Optional<Person> optionalPerson = personService.findUserByUsernameAndPassword(username, password);
+        return personService.generateToken(optionalPerson.orElseThrow(), response);
     }
 
     @PostMapping("")
