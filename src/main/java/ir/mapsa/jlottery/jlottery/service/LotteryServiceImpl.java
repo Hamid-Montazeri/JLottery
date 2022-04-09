@@ -31,7 +31,7 @@ public class LotteryServiceImpl extends BaseServiceImpl<Lottery, LotteryDTO> imp
     private final PersonRepository personRepository;
     private final LotteryMapper lotteryMapper;
 
-    private final Prize prize;
+    private Prize prize;
     private final Winner winner;
     private final Lottery lottery;
 
@@ -62,18 +62,18 @@ public class LotteryServiceImpl extends BaseServiceImpl<Lottery, LotteryDTO> imp
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("There is no \"prizes!\", first define some \"prizes\", please.");
         }
 
-        List<Prize> prizes = (List<Prize>) prizeRepository.findAll();
+        prize = prizeRepository.findByName(prizeType);
 
-        for (Prize prize : prizes) {
-            if (prize.getName() != prizeType) {
-                return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Requested \"prize\" does not exist!");
-            }
+        if (prize == null) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(
+                    String.format("There is no defined \"%s\"!", prizeType.name())
+            );
         }
 
         Set<Person> eligiblePersons = personRepository.findAllByScoreBetween(minRequiredScore, Integer.MAX_VALUE);
 
         if (eligiblePersons.size() == 0) {
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Could not find any eligible customer with required score!");
         }
 
         int randomBall = new Random().nextInt(0, eligiblePersons.size() + 1);

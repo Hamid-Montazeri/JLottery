@@ -29,4 +29,17 @@ public class PrizeServiceImpl extends BaseServiceImpl<Prize, PrizeDTO> implement
     protected BaseMapper<Prize, PrizeDTO> getMapper() {
         return mapper;
     }
+
+    @Override
+    public Prize saveOrUpdate(PrizeDTO dto) {
+        Prize prize = repository.findByName(dto.getName());
+        if (prize != null) {
+            // prevent to add duplicate prize
+            if (prize.getName().name().equalsIgnoreCase(dto.getName().name())) {
+                return prize;
+            }
+        }
+        return super.saveOrUpdate(dto);
+    }
+
 }

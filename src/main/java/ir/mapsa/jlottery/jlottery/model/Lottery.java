@@ -16,7 +16,7 @@ public class Lottery {
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Winner winner;
 
-    @Temporal(TemporalType.DATE)
+    @Temporal(TemporalType.TIMESTAMP)
     private Date date;
 
     public Long getId() {

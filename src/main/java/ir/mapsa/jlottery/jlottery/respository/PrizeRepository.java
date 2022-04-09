@@ -1,10 +1,11 @@
 package ir.mapsa.jlottery.jlottery.respository;
 
 import ir.mapsa.jlottery.jlottery.base.BaseRepository;
+import ir.mapsa.jlottery.jlottery.enums.EPrizeType;
 import ir.mapsa.jlottery.jlottery.model.Prize;
 import org.springframework.stereotype.Repository;
 
 @Repository
 public interface PrizeRepository extends BaseRepository<Prize> {
-
+    Prize findByName(EPrizeType name);
 }
