@@ -13,6 +13,9 @@ import ir.mapsa.jlottery.jlottery.model.Winner;
 import ir.mapsa.jlottery.jlottery.respository.LotteryRepository;
 import ir.mapsa.jlottery.jlottery.respository.PersonRepository;
 import ir.mapsa.jlottery.jlottery.respository.PrizeRepository;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -24,6 +27,7 @@ import java.util.Random;
 import java.util.Set;
 
 @Service
+@AllArgsConstructor
 public class LotteryServiceImpl extends BaseServiceImpl<Lottery, LotteryDTO> implements ILotteryService {
 
     private final LotteryRepository lotteryRepository;
@@ -34,16 +38,6 @@ public class LotteryServiceImpl extends BaseServiceImpl<Lottery, LotteryDTO> imp
     private Prize prize;
     private final Winner winner;
     private final Lottery lottery;
-
-    public LotteryServiceImpl(LotteryRepository lotteryRepository, PrizeRepository prizeRepository, PersonRepository personRepository, LotteryMapper lotteryMapper, Prize prize, Winner winner, Lottery lottery) {
-        this.lotteryRepository = lotteryRepository;
-        this.prizeRepository = prizeRepository;
-        this.personRepository = personRepository;
-        this.lotteryMapper = lotteryMapper;
-        this.prize = prize;
-        this.winner = winner;
-        this.lottery = lottery;
-    }
 
     @Override
     protected BaseRepository<Lottery> getRepository() {

@@ -1,12 +1,14 @@
 package ir.mapsa.jlottery.jlottery.model;
 
 import ir.mapsa.jlottery.jlottery.enums.EPrizeType;
+import lombok.Data;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
 
 @Entity
 @Component
+@Data
 public class Prize {
 
     @Id
@@ -17,30 +19,6 @@ public class Prize {
     private EPrizeType name;
 
     private Integer stock;
-
-    public Long getId() {
-        return this.id;
-    }
-
-    public EPrizeType getName() {
-        return this.name;
-    }
-
-    public Integer getStock() {
-        return this.stock;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public void setName(EPrizeType name) {
-        this.name = name;
-    }
-
-    public void setStock(Integer stock) {
-        this.stock = stock;
-    }
 
     @Override
     public boolean equals(Object o) {

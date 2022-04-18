@@ -1,11 +1,13 @@
 package ir.mapsa.jlottery.jlottery.model;
 
+import lombok.Data;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
 
 @Entity
 @Component
+@Data
 public class Winner {
 
     @Id
@@ -15,19 +17,4 @@ public class Winner {
     @OneToOne(cascade = CascadeType.ALL)
     private Person person;
 
-    public Long getId() {
-        return this.id;
-    }
-
-    public Person getPerson() {
-        return this.person;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public void setPerson(Person person) {
-        this.person = person;
-    }
 }

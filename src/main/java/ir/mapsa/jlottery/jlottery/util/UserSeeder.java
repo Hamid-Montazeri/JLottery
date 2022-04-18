@@ -6,7 +6,7 @@ import ir.mapsa.jlottery.jlottery.enums.ERole;
 import ir.mapsa.jlottery.jlottery.model.Person;
 import ir.mapsa.jlottery.jlottery.model.Role;
 import ir.mapsa.jlottery.jlottery.respository.PersonRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.AllArgsConstructor;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
@@ -18,14 +18,10 @@ import java.util.Set;
 
 
 @Component
+@AllArgsConstructor
 public class UserSeeder implements ApplicationRunner {
 
     private final PersonRepository personRepository;
-
-    @Autowired
-    public UserSeeder(PersonRepository personRepository) {
-        this.personRepository = personRepository;
-    }
 
     @Override
     public void run(ApplicationArguments args) {

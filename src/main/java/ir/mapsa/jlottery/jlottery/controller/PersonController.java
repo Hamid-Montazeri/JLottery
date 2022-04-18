@@ -3,6 +3,8 @@ package ir.mapsa.jlottery.jlottery.controller;
 import ir.mapsa.jlottery.jlottery.dto.PersonDTO;
 import ir.mapsa.jlottery.jlottery.model.Person;
 import ir.mapsa.jlottery.jlottery.service.IPersonService;
+import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,13 +14,10 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/persons")
+@RequiredArgsConstructor
 public class PersonController {
 
     private final IPersonService personService;
-
-    public PersonController(IPersonService personService) {
-        this.personService = personService;
-    }
 
     @PostMapping("/generate-token")
     public ResponseEntity<String> generateToken(@RequestParam String username, @RequestParam String password, HttpServletResponse response) {

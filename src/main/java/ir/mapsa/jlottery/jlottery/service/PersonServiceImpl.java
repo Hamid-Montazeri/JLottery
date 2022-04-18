@@ -8,6 +8,8 @@ import ir.mapsa.jlottery.jlottery.mapper.PersonMapper;
 import ir.mapsa.jlottery.jlottery.model.Person;
 import ir.mapsa.jlottery.jlottery.respository.PersonRepository;
 import ir.mapsa.jlottery.jlottery.util.jwt.JwtUtil;
+import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -18,19 +20,13 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.Optional;
 
 @Service
+@RequiredArgsConstructor
 public class PersonServiceImpl extends BaseServiceImpl<Person, PersonDTO> implements IPersonService {
 
     private final PersonRepository personRepository;
     private final PersonMapper personMapper;
     private final JwtUtil jwtUtil;
     private final AuthenticationManager authenticationManager;
-
-    public PersonServiceImpl(PersonRepository personRepository, PersonMapper personMapper, JwtUtil jwtUtil, AuthenticationManager authenticationManager) {
-        this.personRepository = personRepository;
-        this.personMapper = personMapper;
-        this.jwtUtil = jwtUtil;
-        this.authenticationManager = authenticationManager;
-    }
 
     @Override
     protected BaseRepository<Person> getRepository() {

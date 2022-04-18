@@ -7,18 +7,16 @@ import ir.mapsa.jlottery.jlottery.dto.RoleDTO;
 import ir.mapsa.jlottery.jlottery.mapper.RoleMapper;
 import ir.mapsa.jlottery.jlottery.model.Role;
 import ir.mapsa.jlottery.jlottery.respository.RoleRepository;
+import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 @Service
+@RequiredArgsConstructor
 public class RoleServiceImpl extends BaseServiceImpl<Role, RoleDTO> implements IRoleService {
 
     private final RoleRepository repository;
     private final RoleMapper mapper;
-
-    public RoleServiceImpl(RoleRepository repository, RoleMapper mapper) {
-        this.repository = repository;
-        this.mapper = mapper;
-    }
 
     @Override
     protected BaseRepository<Role> getRepository() {
