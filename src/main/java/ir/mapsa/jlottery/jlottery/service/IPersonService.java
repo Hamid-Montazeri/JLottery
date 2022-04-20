@@ -11,7 +11,6 @@ import java.util.Optional;
 public interface IPersonService extends BaseService<Person, PersonDTO> {
 
     Optional<Person> findUserByUsernameAndPassword(String username, String password);
-
     ResponseEntity<String> generateToken(Person person, HttpServletResponse response);
 
 }

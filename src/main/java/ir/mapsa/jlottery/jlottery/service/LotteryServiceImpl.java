@@ -14,30 +14,25 @@ import ir.mapsa.jlottery.jlottery.respository.LotteryRepository;
 import ir.mapsa.jlottery.jlottery.respository.PersonRepository;
 import ir.mapsa.jlottery.jlottery.respository.PrizeRepository;
 import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.sql.Timestamp;
 import java.time.Instant;
-import java.util.List;
-import java.util.Random;
-import java.util.Set;
+import java.util.*;
 
 @Service
 @AllArgsConstructor
 public class LotteryServiceImpl extends BaseServiceImpl<Lottery, LotteryDTO> implements ILotteryService {
 
-    private final LotteryRepository lotteryRepository;
-    private final PrizeRepository prizeRepository;
-    private final PersonRepository personRepository;
-    private final LotteryMapper lotteryMapper;
-
+    private LotteryRepository lotteryRepository;
+    private PrizeRepository prizeRepository;
+    private PersonRepository personRepository;
+    private LotteryMapper lotteryMapper;
     private Prize prize;
-    private final Winner winner;
-    private final Lottery lottery;
+    private Winner winner;
+    private Lottery lottery;
 
     @Override
     protected BaseRepository<Lottery> getRepository() {
@@ -51,40 +46,32 @@ public class LotteryServiceImpl extends BaseServiceImpl<Lottery, LotteryDTO> imp
 
     @Override
     public ResponseEntity<?> execute(EPrizeType prizeType, Integer minRequiredScore) {
-
         if (prizeRepository.count() == 0) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("There is no \"prizes!\", first define some \"prizes\", please.");
         }
-
         prize = prizeRepository.findByName(prizeType);
-
         if (prize == null) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(
                     String.format("There is no defined \"%s\"!", prizeType.name())
             );
         }
-
-        Set<Person> eligiblePersons = personRepository.findAllByScoreBetween(minRequiredScore, Integer.MAX_VALUE);
-
+        Set<Person> eligiblePersons = personRepository.findAllByScoreGreaterThan(minRequiredScore);
         if (eligiblePersons.size() == 0) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Could not find any eligible customer with required score!");
         }
-
-        int randomBall = new Random().nextInt(0, eligiblePersons.size() + 1);
-
+        int randomBall = new Random().nextInt(eligiblePersons.size() + 1);
         Person winnerPerson = (Person) eligiblePersons.toArray()[randomBall];
-
-        if (prize.getStock() >= 1)
+        if (prize.getStock() >= 1) {
             prize.setStock(prize.getStock() - 1);
-
+        }
         prize.setName(prizeType);
 
-        winnerPerson.setPrizes(List.of(prize));
+        List<Prize> prizes = new ArrayList<>();
+        prizes.add(prize);
 
+        winnerPerson.setPrizes(prizes);
         winner.setPerson(winnerPerson);
-
         lottery.setWinner(winner);
-
         lottery.setDate(
                 Timestamp.from(Instant.now())
         );
